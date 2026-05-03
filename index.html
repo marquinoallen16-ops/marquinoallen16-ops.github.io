@@ -5,94 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marquino Allen | Tech & Repair</title>
     
-    <!-- Favicon: Using your MMA Tech Ops Graphic -->
     <link rel="icon" type="image/png" href="mma-logo.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0b0f1a; color: #e2e8f0; }
-        .card { background-color: #161e2e; border: 1px solid #1f2937; transition: 0.3s; overflow: hidden; }
-        .card:hover { border-color: #3b82f6; transform: translateY(-4px); }
-        .card img { width: 100%; height: 160px; object-fit: cover; opacity: 0.7; transition: 0.3s; }
-        .card:hover img { opacity: 1; }
+        html { scroll-behavior: smooth; }
+        body { 
+            background-color: #0b0f1a; 
+            color: #e2e8f0;
+            background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, #0b0f1a 80%);
+        }
+        .card { 
+            background-color: rgba(22, 30, 46, 0.8); 
+            backdrop-filter: blur(8px);
+            border: 1px solid #1f2937; 
+            transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            overflow: hidden; 
+        }
+        .card:hover { 
+            border-color: #3b82f6; 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.3); 
+        }
+        .card img { width: 100%; height: 180px; object-fit: cover; opacity: 0.5; transition: 0.4s; }
+        .card:hover img { opacity: 0.9; scale: 1.05; }
+        .tool-badge { 
+            background: rgba(30, 41, 59, 0.5); 
+            border: 1px solid #334155; 
+            padding: 4px 14px; 
+            border-radius: 999px; 
+            font-size: 0.75rem; 
+            color: #60a5fa;
+            font-family: monospace;
+        }
+        .terminal-text { font-family: 'Courier New', Courier, monospace; color: #10b981; }
     </style>
 </head>
 <body class="font-sans antialiased">
 
-    <header class="max-w-4xl mx-auto pt-24 pb-16 px-6">
-        <h1 class="text-5xl font-extrabold text-white tracking-tight">Marquino Allen</h1>
-        <p class="mt-4 text-xl text-blue-400 font-medium">Computer Technician & Technical Support</p>
-        <p class="mt-2 text-slate-400 max-w-lg leading-relaxed">
-            Bringing "dead" systems back to life through precision hardware repair, data salvage, and custom system recovery.
-        </p>
+    <header class="max-w-4xl mx-auto pt-32 pb-16 px-6">
+        <div class="inline-block px-3 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">
+            Available for Contract Work
+        </div>
+        <h1 class="text-6xl font-extrabold text-white tracking-tighter">Marquino M. Allen</h1>
+        <p class="mt-4 text-2xl text-blue-400 font-medium">Computer Technician & Technical Support</p>
         
-        <div class="mt-8 flex gap-4">
-            <a href="mailto:marquino.allen16@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-md font-bold transition shadow-lg shadow-blue-900/20">Contact for Jobs</a>
-            <span class="text-slate-600 self-center">|</span>
-            <p class="text-slate-500 self-center">Based in Kingston, Jamaica</p>
+        <div class="mt-6 p-4 rounded-lg bg-black/40 border border-slate-800 max-w-xl">
+            <p class="terminal-text text-sm mb-2">> status: active_and_ready</p>
+            <p class="text-slate-400 leading-relaxed italic">
+                "Bringing 'dead' systems back to life through precision hardware repair, data salvage, and custom system recovery."
+            </p>
+        </div>
+        
+        <div class="mt-8 flex flex-wrap gap-3">
+            <span class="tool-badge">Linux Mint</span>
+            <span class="tool-badge">WinPE Recovery</span>
+            <span class="tool-badge">Android ROMs</span>
+            <span class="tool-badge">Microsoft Windows</span>
+        </div>
+        
+        <div class="mt-10 flex flex-wrap gap-6 items-center">
+            <a href="mailto:marquino.allen16@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-lg font-bold transition-all hover:scale-105 shadow-xl shadow-blue-900/40">
+                Deploy Support Request
+            </a>
+            <div class="text-slate-500 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                Kingston, JA
+            </div>
         </div>
     </header>
 
+    <!-- Quick Stats Bar -->
+    <div class="max-w-4xl mx-auto px-6 mb-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/20 text-center">
+            <p class="text-2xl font-bold text-white">100%</p>
+            <p class="text-xs text-slate-500 uppercase font-bold">Data Safety Rate</p>
+        </div>
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/20 text-center">
+            <p class="text-2xl font-bold text-white">4yr+</p>
+            <p class="text-xs text-slate-500 uppercase font-bold">Repair Exp.</p>
+        </div>
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/20 text-center">
+            <p class="text-2xl font-bold text-white">24/7</p>
+            <p class="text-xs text-slate-500 uppercase font-bold">Support Mindset</p>
+        </div>
+        <div class="p-4 rounded-xl border border-slate-800 bg-slate-900/20 text-center">
+            <p class="text-2xl font-bold text-white">Fast</p>
+            <p class="text-xs text-slate-500 uppercase font-bold">Turnaround</p>
+        </div>
+    </div>
+
     <main class="max-w-4xl mx-auto px-6 pb-24">
         
-        <!-- Hardware & Repairs -->
-        <section class="mb-16">
-            <h2 class="text-sm uppercase tracking-widest text-blue-500 font-bold mb-6">Hardware & Repairs</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card rounded-xl">
-                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=800" alt="Motherboard repair">
-                    <div class="p-6">
-                        <h3 class="text-white font-bold mb-2">Full Teardowns</h3>
-                        <p class="text-slate-400 text-sm">Replacing motherboards, broken screens, and keyboards. Expert disassembly and reassembly of laptops and desktops.</p>
-                    </div>
-                </div>
-                <div class="card rounded-xl">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="SSD and RAM upgrade">
-                    <div class="p-6">
-                        <h3 class="text-white font-bold mb-2">Battery & Part Swaps</h3>
-                        <p class="text-slate-400 text-sm">Battery replacements and performance upgrades. Installing high-speed SSDs and RAM to optimize older machines.</p>
-                    </div>
-                </div>
+        <section class="mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-xl font-bold text-white">Core Capabilities</h2>
+                <div class="h-[1px] flex-grow bg-slate-800"></div>
             </div>
-        </section>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Hardware -->
+                <div class="card rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&q=80&w=800" alt="Hardware Repair">
+                    <div class="p-8">
+                        <div class="text-blue-500 text-xs font-bold mb-2 tracking-widest uppercase">Hardware</div>
+                        <h3 class="text-xl text-white font-bold mb-3">Precision Teardowns</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">From motherboard swaps to intricate screen replacements, I handle the physical layer of tech with surgical precision.</p>
+                    </div>
+                </div>
 
-        <!-- System Recovery -->
-        <section class="mb-16">
-            <h2 class="text-sm uppercase tracking-widest text-blue-500 font-bold mb-6">System Recovery</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card rounded-xl">
-                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=800" alt="BIOS terminal">
-                    <div class="p-6">
-                        <h3 class="text-white font-bold mb-2">BIOS & Boot Troubleshooting</h3>
-                        <p class="text-slate-400 text-sm">Switching between UEFI and Legacy, fixing CSM issues, and configuring BIOS to restore system boot functionality.</p>
-                    </div>
-                </div>
-                <div class="card rounded-xl">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800" alt="Data server and storage">
-                    <div class="p-6">
-                        <h3 class="text-white font-bold mb-2">Data Salvage</h3>
-                        <p class="text-slate-400 text-sm">Professional file retrieval from corrupted partitions or failing drives. Prioritizing data integrity and safe migration.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Other Skills -->
-        <section>
-            <h2 class="text-sm uppercase tracking-widest text-blue-500 font-bold mb-6">Other Skills</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card rounded-xl">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800" alt="Mobile phone software">
-                    <div class="p-6">
-                        <h3 class="text-white font-bold mb-2">Phone Services</h3>
-                        <p class="text-slate-400 text-sm">OEM Unlocking for factory-unlocked devices and flashing custom software/ROMs for advanced setups.</p>
-                    </div>
-                </div>
-                <div class="card rounded-xl">
-                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=800" alt="Graphic design assets">
-                    <div class="p-6">
-                        <h3 class="text-white font-bold mb-2">Basic Visual Work</h3>
-                        <p class="text-slate-400 text-sm">Functional photo editing and graphic layouts for flyers, logos, or digital promotional assets.</p>
+                <!-- Recovery -->
+                <div class="card rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&q=80&w=800" alt="Recovery">
+                    <div class="p-8">
+                        <div class="text-blue-500 text-xs font-bold mb-2 tracking-widest uppercase">Software</div>
+                        <h3 class="text-xl text-white font-bold mb-3">System Resuscitation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Specialized in BIOS recovery, boot-loop fixes, and data salvage from corrupted environments.</p>
                     </div>
                 </div>
             </div>
@@ -100,9 +128,15 @@
 
     </main>
 
-    <footer class="max-w-4xl mx-auto px-6 py-10 border-t border-slate-800 text-center">
-        <p class="text-slate-500 text-sm">Registered Business: **K.A.T.S. (K. Allen Tech Services)**</p>
-        <p class="text-slate-600 text-xs mt-2">© 2026 Marquino Allen</p>
+    <footer class="max-w-4xl mx-auto px-6 py-12 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-left">
+            <p class="text-slate-400 font-bold">K. Allen Tech Services</p>
+            <p class="text-slate-600 text-sm">Registered Business & Family Operated</p>
+        </div>
+        <div class="flex gap-6">
+            <a href="https://marquinoallen16-ops.github.io/KATS/" class="text-blue-400 hover:text-white transition text-sm font-medium">Visit K.A.T.S Website</a>
+        </div>
+        <p class="text-slate-600 text-xs uppercase tracking-widest">© 2026 Marquino Allen</p>
     </footer>
 
 </body>
