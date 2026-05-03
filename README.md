@@ -1,4 +1,4 @@
-# Marquino "Quino" Allen | Technical Operations Specialist
+# Marquino "Malik" Allen | Technical Operations Specialist
 
 Highly focused Computer Repair Technician based in Spanish Town, Jamaica. I specialize in the "heavy lifting" of technical infrastructure—from board-level hardware surgery to deep system recovery and data salvage. 
 
