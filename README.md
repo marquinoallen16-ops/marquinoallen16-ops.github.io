@@ -33,9 +33,9 @@ I operate **K.A.T.S. (K. Allen Tech Services)**, a registered family business pr
 
 ### 📫 Get In Touch
 
-*   **Location**: Spanish Town / Kingston, Jamaica
+*   **Location**: Kingston, Jamaica
 *   **Business**: K.A.T.S. (K. Allen Tech Services)
-*   **Contract Inquiries**: [Your Email Address]
+*   **Contract Inquiries**: [marquino.allen16@gmail.com]
 
 *"I don't just fix computers; I build systems that work."*
 <!--
